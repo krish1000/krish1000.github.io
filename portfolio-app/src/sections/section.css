@@ -1,0 +1,35 @@
+.section-welcome-jumbo {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+.section-about-jumbo {
+    background-color: #a2c1ff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #282c34;
+  }
+
+  /* .navbar,
+  .navbar-default {
+      background-image: linear-gradient(to bottom,#2c4053 0,#2c4053 100%) !important; /* override background image gradient w/ flat color 
+  } */
+
+  /* .navbar-dark,
+  .navbar-nav,
+  .nav-link {
+    color: yellow;
+    /* mix-blend-Mode: difference; 
+    mix-blend-Mode: exclusion;
+  } */
+  /* style={{mix-blend-Mode: 'difference'}} */
