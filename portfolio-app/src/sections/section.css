@@ -1,11 +1,57 @@
+:root {
+    --big-font: calc(10px + 2vmin)
+  }
+
+  /* ssssssssssssssssssssssssssss */
+  /* body {
+    background-color: #120439;
+    height: 100%;
+    font-family: 'tradegothiclt-bold', sans-serif;
+  }
+  
+  h1 {
+    font-size: 5em;
+    color: white;
+    text-transform: uppercase;
+  }  
+  
+  
+  span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  } 
+  
+  @keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+  } */
+/* ssssssssssssssssssssssssssssssss */
+
+.type-writer {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+} 
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+html {background-color: #282c34}
+
+/* switching to class mode */
 .section-welcome-jumbo {
     background-color: #282c34;
-    min-height: 100vh;
+    padding-top: 45px;
+    min-height: 65vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    text-align: left;
+    font-size: var(--big-font);
     color: white;
   }
 
@@ -16,7 +62,18 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
+    font-size: var(--big-font);
+    color: #282c34;
+  }
+
+.section-projects-jumbo {
+    background-color: #00a46b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--big-font);
     color: #282c34;
   }
 

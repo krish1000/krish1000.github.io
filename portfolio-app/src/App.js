@@ -5,6 +5,8 @@ import './App.css';
 // import {BrowserRouter as Router} from 'react-router-dom'
 import Welcome from './sections/welcome.jsx';
 import About from './sections/about.jsx';
+import Contact from './sections/contact.jsx';
+import Projects from './sections/projects.jsx';
 import { NavBar1 } from './sections/navbar.jsx';
 
 // function App() {
@@ -53,6 +55,10 @@ const App = () => {
         <Welcome />
 
         <About />
+
+        <Projects />
+        
+        <Contact />
         
       </div>
       

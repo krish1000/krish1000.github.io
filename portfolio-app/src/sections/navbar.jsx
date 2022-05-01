@@ -4,7 +4,7 @@ import './section.css';
 
 export const NavBar1 = () => {
   return (
-      <Navbar fixed="top" variant="dark" expand="lg">
+      <Navbar fixed="top" variant="dark" expand="sm">
         <Navbar.Brand href="https://github.com/krish1000">
           <img
             src="https://avatars3.githubusercontent.com/u/54220286?s=460&u=8ebd8bd9ed0403c51e674be504f74770cc6c7948&v=4"
