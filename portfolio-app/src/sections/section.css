@@ -66,7 +66,7 @@ html {background-color: #282c34}
     background-size: cover;
   }
 
-#demo-text {
+#name {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
@@ -81,9 +81,47 @@ html {background-color: #282c34}
     background-size: cover;
   }
 
+.font-main-theme {
+  color: '#ffd6a2'
+}
+
+.button-more-about {
+  background-color: transparent !important;
+  border-width: calc(1px + 0.25vw);
+  font-size: calc(10px + 0.40vw);
+  border-color:#ffd6a2; 
+  color: white;
+  
+  transition: border-color 0.20s ease-in-out;
+}
+
+.button-more-about:hover {
+  background-color: transparent;
+  border-color:rgba(148, 148, 148, 0.61);
+}
+.button-more-about:active {
+  background-color: transparent;
+  border-color:rgba(148, 148, 148, 0.61) !important;
+}
+
+.logos {
+  /* border-color:#ffd6a2;  */
+  color: #ffd6a2;
+  transition: color 0.20s ease-in-out;
+  transition: font-size 0.175s ease-in-out;
+}
+
+.logos:hover {
+  background-color: transparent;
+  color:rgba(148, 148, 148, 0.61);
+  font-size: 120%;
+}
+
 .section-about-jumbo {
-    background-color: #a2c1ff;
-    min-height: 100vh;
+    /* background-color: #a2c1ff; */
+    /* background-color: #3c8dde; */
+    background-color: #0c0c0e;
+    min-height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,6 +139,12 @@ html {background-color: #282c34}
     justify-content: center;
     font-size: var(--big-font);
     color: #282c34;
+  }
+
+  .align-flex-style {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
   }
 
   /* .navbar,
