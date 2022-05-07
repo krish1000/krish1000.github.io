@@ -58,7 +58,9 @@ html {background-color: #282c34}
     color: white;
 
     /* https://www.pexels.com/photo/black-textile-on-black-textile-5086477/ */
-    background-image: url('https://images.pexels.com/photos/5086477/pexels-photo-5086477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    /* Photo taken by Alex Andrews from Pexels :) */
+    /* background-image: url('https://images.pexels.com/photos/5086477/pexels-photo-5086477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
+    background-image: url('../media/welcome_landing_page.jpg');
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -98,10 +100,14 @@ html {background-color: #282c34}
 .button-more-about:hover {
   background-color: transparent;
   border-color:rgba(148, 148, 148, 0.61);
+  color: #ffd6a2;
+  text-shadow: 1px 1px 7px #ffd6a2;
 }
+
 .button-more-about:active {
   background-color: transparent;
   border-color:rgba(148, 148, 148, 0.61) !important;
+  color: #ffd6a2; 
 }
 
 .logos {

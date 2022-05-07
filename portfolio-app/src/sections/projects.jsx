@@ -1,4 +1,5 @@
 import './section.css';
+import ProjectCard from '../components/projectCard.jsx'
 
 const Projects = (props) => {
 
@@ -8,6 +9,7 @@ const Projects = (props) => {
                 under construction as of 2022-05-04 <br />
                 Project modals goes here {'<>'}
             </h1>
+            <ProjectCard asdf={'hello'} test={'testing'}/>
         </div>
     )
 }

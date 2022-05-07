@@ -42,7 +42,7 @@ const Welcome = (props) => {
                     <Image width={125} roundedCircle src='https://avatars3.githubusercontent.com/u/54220286?s=460&u=8ebd8bd9ed0403c51e674be504f74770cc6c7948&v=4'></Image>
                     </Row> */}
                     <span style= {{color: '#ffd6a2', fontFamily: "'Poppins', sans-serif", fontWeight: 700, fontSize: 'calc(10px + 1.25vw)'}}> Hey there! </span>  <br/>
-                    <span style={{color: '#8EF9F3', fontFamily: "'Poppins', sans-serif", lineHeight: 1, fontSize: 'calc(20px + 5.10vw)'}}> <div id="name"> I'm Krishaanth <br /> Manoharan </div> </span>
+                    <span style={{color: '#8EF9F3', fontFamily: "'Poppins', sans-serif", lineHeight: 1, fontSize: 'calc(20px + 5.10vw)', textShadow: '2px 2px 5em #ffd6a2'}}> <div id="name"> I'm Krishaanth <br /> Manoharan </div> </span>
                     {/* "poppins-medium", sans-serif */}
                     {/* 'Roboto, sans-serif' */}
                     {/* <Card style={{color: 'black', backgroundColor: 'rgba(0%, 0%, 0%, 0.0)', padding: '5px',}}>

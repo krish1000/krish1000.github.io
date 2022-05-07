@@ -14,7 +14,7 @@ export const NavBar1 = () => {
             alt=""
             id="gitlogo"
           />
-          &nbsp; Joe Mama
+          &nbsp; K|M
         </Navbar.Brand>
         <Navbar.Toggle className="border-0" aria-controls="basic-navbar-nav" />
         {/* aria-controls="basic-navbar-nav" */}
