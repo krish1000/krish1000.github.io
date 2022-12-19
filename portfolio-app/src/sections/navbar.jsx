@@ -1,11 +1,12 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
-import './section.css';
+import { Nav, Navbar, Container } from "react-bootstrap";
+import "./section.css";
 
 export const NavBar1 = () => {
   return (
-      <Navbar fixed="top" variant="dark" expand="sm">
-        {/* <Navbar.Brand href="https://github.com/krish1000"> */}
+    <Navbar fixed="top" variant="dark" expand="sm">
+      {/* <Navbar.Brand href="https://github.com/krish1000"> */}
+      <Container>
         <Navbar.Brand href="#welcome">
           <img
             src="https://avatars3.githubusercontent.com/u/54220286?s=460&u=8ebd8bd9ed0403c51e674be504f74770cc6c7948&v=4"
@@ -16,11 +17,20 @@ export const NavBar1 = () => {
           />
           &nbsp; K|M
         </Navbar.Brand>
-        <Navbar.Toggle className="border-0" aria-controls="basic-navbar-nav" />
+        {/* <Navbar.Toggle className="border-0" aria-controls="basic-navbar-nav" /> OLD */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         {/* aria-controls="basic-navbar-nav" */}
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ml-auto" activeKey="" style={{display: 'flex', gap: 25}}> 
-          {/* put activekey as empty string so it doesnt keep current key as white colour */}
+        {/* <Navbar.Collapse id="basic-navbar-nav"> OLD */}
+
+        <Navbar.Collapse id="responsive-navbar-nav">
+          {/* Need this  so it pushes the other nav to the right side */}
+          <Nav className="me-auto"></Nav>
+          <Nav
+            className="ml-auto"
+            activeKey=""
+            style={{ display: "flex", gap: 25 }}
+          >
+            {/* put activekey as empty string so it doesnt keep current key as white colour */}
             {/* <Nav.Item>
               <Nav.Link href="#/">Home</Nav.Link>
             </Nav.Item> */}
@@ -35,6 +45,7 @@ export const NavBar1 = () => {
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
+      </Container>
+    </Navbar>
   );
 };

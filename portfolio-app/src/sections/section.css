@@ -62,6 +62,7 @@ html {background-color: #282c34}
     /* background-image: url('https://images.pexels.com/photos/5086477/pexels-photo-5086477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); */
     background-image: url('../media/welcome_landing_page.jpg');
     /* Create the parallax scrolling effect */
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,6 +94,7 @@ html {background-color: #282c34}
   font-size: calc(10px + 0.40vw);
   border-color:#ffd6a2; 
   color: white;
+  width:auto;
   
   transition: border-color 0.20s ease-in-out;
 }
