@@ -136,10 +136,13 @@ html {background-color: #282c34}
     justify-content: center;
     font-size: var(--big-font);
     color: #282c34;
+    padding-bottom: 30px;
   }
 
 .section-projects-jumbo {
-    background-color: #00a46b;
+    /* background-color: #00a46b; */
+    /* background-color: #152338; */
+    background-image: radial-gradient(ellipse at top, black 50% ,  #152338 125%);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -147,6 +150,7 @@ html {background-color: #282c34}
     justify-content: center;
     font-size: var(--big-font);
     color: #282c34;
+    padding-bottom: 30px;
   }
 
   .align-flex-style {

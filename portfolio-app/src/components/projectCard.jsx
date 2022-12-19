@@ -1,11 +1,11 @@
 // import './section.css';
-import { Card, Row, Col } from "react-bootstrap";
+import { Card, Row, Col, Image } from "react-bootstrap";
 import { SiGithub } from "react-icons/si";
 
 const ProjectCard = (props) => {
   console.log(props);
 
-  let left = "left";
+  let orientation = props.orientation;
 
   return (
     <div
@@ -15,27 +15,42 @@ const ProjectCard = (props) => {
         // alignItems: "normal",
         // alignContent: "normal",
         textAlign: "left",
+        // position: "static",
+        // right: "12%",
       }}
     >
       <Card
         style={{
           //   paddingTop: "30px",
           //   paddingBottom: "30px",
-          minHeight: "300px",
+          minHeight: "250px",
           backgroundColor: "",
-          padding: "25px",
+          padding: "15px",
         }}
       >
-        <p style={{ float: left }}>
-          <strong>Project Title here</strong>
-        </p>
         <Row style={{ padding: "15px" }}>
-          <Col>
+          <Col sm={4}>
+            <Row>
+              <p>
+                <strong style={{ float: orientation }}>
+                  Project Title here
+                </strong>
+              </p>
+            </Row>
+
             <Row>
               <p>insert type 2022-12-18</p>
             </Row>
-            <Row>
-              <Card>smoll description here</Card>
+            <Row style={{ left: "10%" }}>
+              <Card
+                style={{
+                  zIndex: 999,
+                  backgroundColor: "#00a46b",
+                  left: "10%",
+                }}
+              >
+                smoll description here blah blah
+              </Card>
             </Row>
             <Row>
               <a
@@ -47,10 +62,16 @@ const ProjectCard = (props) => {
               </a>
             </Row>
           </Col>
-          <Col>
-            <Card>
-              <p> hello</p>
-            </Card>
+          <Col sm={8}>
+            <Row style={{ position: "relative", left: "12%" }}>
+              <Image
+                // style={{ zIndex: 1 }}
+                // width={"50px"}
+                // style={{ borderRadius: "25px" }}
+                rounded
+                src="https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              ></Image>
+            </Row>
           </Col>
         </Row>
       </Card>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, Card } from "react-bootstrap";
 import "./section.css";
 
 export const NavBar1 = () => {
@@ -7,7 +7,10 @@ export const NavBar1 = () => {
     <Navbar fixed="top" variant="dark" expand="sm">
       {/* <Navbar.Brand href="https://github.com/krish1000"> */}
       <Container>
-        <Navbar.Brand href="#welcome">
+        <Navbar.Brand
+          href="#welcome"
+          style={{ textShadow: "#000 0px 1px 5px" }}
+        >
           <img
             src="https://avatars3.githubusercontent.com/u/54220286?s=460&u=8ebd8bd9ed0403c51e674be504f74770cc6c7948&v=4"
             width="30"
@@ -28,7 +31,7 @@ export const NavBar1 = () => {
           <Nav
             className="ml-auto"
             activeKey=""
-            style={{ display: "flex", gap: 25 }}
+            style={{ display: "flex", gap: 25, textShadow: "#000 0px 1px 1px" }}
           >
             {/* put activekey as empty string so it doesnt keep current key as white colour */}
             {/* <Nav.Item>
