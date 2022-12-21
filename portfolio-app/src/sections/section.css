@@ -153,6 +153,20 @@ html {background-color: #282c34}
     padding-bottom: 30px;
   }
 
+.section-contact-jumbo {
+    /* background-color: #a2c1ff; */
+    /* background-color: #3c8dde; */
+    /* background-image: radial-gradient(ellipse at top, #0c0c0e 70% ,  #152338 125%); */
+    min-height: 50vh;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    font-size: var(--big-font);
+    color: #282c34;
+    padding-bottom: 30px;
+  }
+
   .align-flex-style {
     align-items: center;
     text-align: center;
