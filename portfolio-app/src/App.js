@@ -1,13 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 // import { Link } from 'react-router-dom'
 // import {BrowserRouter as Router} from 'react-router-dom'
-import Welcome from './sections/welcome.jsx';
-import About from './sections/about.jsx';
-import Contact from './sections/contact.jsx';
-import Projects from './sections/projects.jsx';
-import { NavBar1 } from './sections/navbar.jsx';
+import Welcome from "./sections/welcome.jsx";
+import About from "./sections/about.jsx";
+import Contact from "./sections/contact.jsx";
+import Projects from "./sections/projects.jsx";
+import { NavBar1 } from "./sections/navbar.jsx";
+// import { Container } from "react-bootstrap";
 
 // function App() {
 //   return (
@@ -38,7 +39,7 @@ import { NavBar1 } from './sections/navbar.jsx';
 //         <p>
 //           testing 123321
 //         </p>
-        
+
 //       </header>
 //     </div>
 //   );
@@ -47,7 +48,7 @@ import { NavBar1 } from './sections/navbar.jsx';
 // export default App;
 
 const App = () => {
-    return (
+  return (
     <>
       <div className="App">
         <NavBar1 />
@@ -57,12 +58,10 @@ const App = () => {
         <About />
 
         <Projects />
-        
+
         <Contact />
-        
       </div>
-      
     </>
   );
-}
+};
 export default App;
