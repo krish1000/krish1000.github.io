@@ -2,6 +2,7 @@
 import "../components/components.css";
 import { Card, Row, Col, Image } from "react-bootstrap";
 import { SiGithub } from "react-icons/si";
+// import { RxOpenInNewWindow } from "react-icons/";
 
 const ProjectCard = (props) => {
   console.log(props);
@@ -11,7 +12,10 @@ const ProjectCard = (props) => {
   return (
     <div
       style={{
+        // margin: "50px",
         margin: "50px",
+        marginLeft: "10%",
+        marginRight: "10%",
         textAlign: "left",
       }}
       className="projectCard"
@@ -19,15 +23,15 @@ const ProjectCard = (props) => {
       <Card
         style={{
           // minHeight: "450px",
-          // maxHeight: "475px",
+          maxHeight: "475px",
           backgroundColor: "",
           padding: "15px",
           paddingLeft: "30px",
         }}
       >
         <Row style={{ padding: "15px" }}>
-          <Col lg={4}>
-            <Row>
+          <Col className=" " lg={4}>
+            <Row className="">
               <p>
                 <strong style={{ float: orientation }}>
                   Project Title here
@@ -35,10 +39,14 @@ const ProjectCard = (props) => {
               </p>
             </Row>
 
-            <Row>
+            <Row className="">
               <p>insert type 2022-12-18</p>
             </Row>
-            <Row //style={{ height: "55%" }}
+            {/* BAD DESIGN, NEED TO FIX THIS LATER!!! ******************
+                DONT USE FIXED HEIGHT VALUE!! ******** */}
+            {/* <div> */}
+            <Row
+              className="h-55" //style={{ minHeight: "100%", width: "120%" }}
             >
               <Card
                 style={{
@@ -46,15 +54,17 @@ const ProjectCard = (props) => {
                   backgroundColor: "#00a46b",
                   // left: "10%",
                   // width: "150%",
+                  // height: "100%",
                 }}
               >
                 smoll description here blah blah
               </Card>
             </Row>
-            <Row>
+            {/* </div> */}
+            <Row className="">
               <p>insert tools used</p>
             </Row>
-            <Row>
+            <Row className="">
               <div>
                 <a
                   href={"http://github.com/krish1000"} //props.link or something should be here
@@ -63,6 +73,7 @@ const ProjectCard = (props) => {
                 >
                   <SiGithub />
                 </a>
+                {/* <RxOpenInNewWindow /> */}
               </div>
             </Row>
           </Col>
