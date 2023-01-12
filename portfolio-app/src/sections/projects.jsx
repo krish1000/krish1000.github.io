@@ -7,7 +7,7 @@ const projectCardContents = [
     title: "Ecommerce Webpage",
     subTitle: "Multi-tier web application with user and admin views",
     desc: "this is a description",
-    images: ["asdf"],
+    images: ["portfolio-appsrcmediaprojectImagesecommerceLanding.jpg"],
     tools: ["antlr4", "java", "html & css"],
     url: "github.com",
   },

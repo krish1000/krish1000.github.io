@@ -12,7 +12,6 @@ const ProjectCard = (props) => {
   return (
     <div
       style={{
-        // margin: "50px",
         margin: "50px",
         marginLeft: "13%",
         marginRight: "13%",
@@ -32,7 +31,13 @@ const ProjectCard = (props) => {
         }}
       >
         <Row style={{ padding: "15px" }}>
-          <Col className=" " lg={4}>
+          <Col
+            className=" "
+            sm={8}
+            style={{
+              zIndex: 999,
+            }}
+          >
             <Row className="">
               <p>
                 <strong style={{ float: orientation }}>
@@ -49,12 +54,16 @@ const ProjectCard = (props) => {
             {/* BAD DESIGN, NEED TO FIX THIS LATER!!! ******************
                 DONT USE FIXED HEIGHT VALUE!! ******** */}
             {/* <div> */}
-            <Row className="h-55" style={{ minHeight: "180px", width: "150%" }}>
+            <Row className="h-55" style={{ minHeight: "180px", width: "100%" }}>
               <Card
                 style={{
-                  zIndex: 999,
+                  // zIndex: 999,
                   // backgroundColor: "#00a46b",
-                  backgroundColor: "#0c0c0e",
+                  backdropFilter: "blur(5px)",
+                  background:
+                    "linear-gradient(to right, #0c0c0e 50% ,  #0c0c0eb90 200%)",
+                  opacity: "5px",
+                  // borderColor: "transparent",
                   color: "white",
                   // left: "10%",
                   // width: "150%",
@@ -82,7 +91,7 @@ const ProjectCard = (props) => {
               </div>
             </Row>
           </Col>
-          <Col sm={8}>
+          <Col sm={4}>
             <Row
               className="projectImage"
               // style={{ position: "relative", left: "12%" }}
@@ -100,7 +109,7 @@ const ProjectCard = (props) => {
                     borderRadius: "3%",
                     objectFit: "contain",
                     height: "380px",
-                    width: "100%",
+                    width: "250%",
                     // display: "block",
                     // width: "auto",
                     // height: "auto",
