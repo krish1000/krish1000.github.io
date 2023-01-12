@@ -4,13 +4,28 @@ import { Container } from "react-bootstrap";
 
 const projectCardContents = [
   {
+    title: "Ecommerce Webpage",
+    subTitle: "Multi-tier web application with user and admin views",
+    desc: "this is a description",
+    images: ["asdf"],
+    tools: ["antlr4", "java", "html & css"],
+    url: "github.com",
+  },
+  {
     title: "Compiler",
+    subTitle: "For Measuring Quality of Testing",
+    desc: "this is a description",
+    images: ["asdf"],
+    tools: ["antlr4", "java", "html & css"],
+    url: "github.com",
   },
   {
-    title: "title2",
-  },
-  {
-    title: "titlethird",
+    title: "Compiler",
+    subTitle: "For Measuring Quality of Testing",
+    desc: "this is a description",
+    images: ["asdf"],
+    tools: ["antlr4", "java", "html & css"],
+    url: "github.com",
   },
 ];
 
@@ -20,7 +35,14 @@ const projectCardContents = [
  */
 const exportProjectCards = () => {
   return projectCardContents.map((content) => {
-    return <ProjectCard title={content.title} orientation={"left"} />;
+    return (
+      <ProjectCard
+        title={content.title}
+        subTitle={content.subTitle}
+        desc={content.desc}
+        orientation={"left"}
+      />
+    );
   });
 };
 

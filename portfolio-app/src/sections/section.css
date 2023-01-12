@@ -143,6 +143,7 @@ html {background-color: #282c34}
     /* background-color: #00a46b; */
     /* background-color: #152338; */
     background-image: radial-gradient(ellipse at top, #0c0c0e 70% ,  #152338 125%);
+    /* background-image: radial-gradient(ellipse at top, #0c0c0e 70% ,  #252544 125%); */
     min-height: 100vh;
     display: flex;
     flex-direction: column;

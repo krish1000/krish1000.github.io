@@ -14,16 +14,18 @@ const ProjectCard = (props) => {
       style={{
         // margin: "50px",
         margin: "50px",
-        marginLeft: "10%",
-        marginRight: "10%",
+        marginLeft: "13%",
+        marginRight: "13%",
         textAlign: "left",
+        // paddingLeft: "10%",
+        // paddingRight: "10%",
       }}
       className="projectCard"
     >
       <Card
         style={{
-          // minHeight: "450px",
-          maxHeight: "475px",
+          minHeight: "450px",
+          maxHeight: "450px",
           backgroundColor: "",
           padding: "15px",
           paddingLeft: "30px",
@@ -34,30 +36,33 @@ const ProjectCard = (props) => {
             <Row className="">
               <p>
                 <strong style={{ float: orientation }}>
-                  Project Title here
+                  {/* Project Title here */}
+                  {props.title}
                 </strong>
               </p>
             </Row>
 
             <Row className="">
-              <p>insert type 2022-12-18</p>
+              {/* <p>insert type 2022-12-18</p> */}
+              <p style={{ fontSize: "15px" }}>{props.subTitle}</p>
             </Row>
             {/* BAD DESIGN, NEED TO FIX THIS LATER!!! ******************
                 DONT USE FIXED HEIGHT VALUE!! ******** */}
             {/* <div> */}
-            <Row
-              className="h-55" //style={{ minHeight: "100%", width: "120%" }}
-            >
+            <Row className="h-55" style={{ minHeight: "180px", width: "150%" }}>
               <Card
                 style={{
                   zIndex: 999,
-                  backgroundColor: "#00a46b",
+                  // backgroundColor: "#00a46b",
+                  backgroundColor: "#0c0c0e",
+                  color: "white",
                   // left: "10%",
                   // width: "150%",
                   // height: "100%",
                 }}
               >
-                smoll description here blah blah
+                {/* smoll description here  */}
+                {props.desc}
               </Card>
             </Row>
             {/* </div> */}
