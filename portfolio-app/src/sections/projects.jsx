@@ -19,6 +19,34 @@ const projectCardContents = [
     url: "github.com",
   },
   {
+    title: "GitHub Analyzer",
+    subTitle: "Streams GitHub Repo Data & Analyzes",
+    desc:
+      "Retrieves GitHub public repository commit data " +
+      "every 60 seconds, streams data over TCP to Spark. " +
+      "Map Reduce algorithmn was used to reduce key, " +
+      "value pairs to keep unique repo commits. " +
+      "Flask web-app outputs spark data; that consists " +
+      "of number of repos, top 10 most freq words etc",
+    images: ["asdf"],
+    tools: ["antlr4", "java", "html & css"],
+    url: "github.com",
+  },
+  {
+    title: "NeoExchange Bot",
+    subTitle: "Notifies of new CDRs",
+    desc:
+      "Discord bot that scrapes NeoExchange Canadian " +
+      "Depository Receipts. " +
+      "Runs batch runs to notify all servers if any CDRs " +
+      "are created along with showing closing, price, " +
+      "change, trades and volume. " +
+      "Data stored using Replit's key-value database",
+    images: ["asdf"],
+    tools: ["antlr4", "java", "html & css"],
+    url: "github.com",
+  },
+  {
     title: "Compiler",
     subTitle: "For Measuring Quality of Testing",
     desc: "this is a description",
