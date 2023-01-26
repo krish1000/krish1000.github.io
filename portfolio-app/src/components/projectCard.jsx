@@ -23,8 +23,8 @@ const ProjectCard = (props) => {
     >
       <Card
         style={{
-          minHeight: "450px",
-          maxHeight: "450px",
+          minHeight: "405px",
+          maxHeight: "405px",
           backgroundColor: "",
           padding: "15px",
           paddingLeft: "30px",
@@ -54,7 +54,7 @@ const ProjectCard = (props) => {
             {/* BAD DESIGN, NEED TO FIX THIS LATER!!! ******************
                 DONT USE FIXED HEIGHT VALUE!! ******** */}
             {/* <div> */}
-            <Row className="h-55" style={{ minHeight: "180px", width: "100%" }}>
+            <Row className="h-55" style={{ minHeight: "125px", width: "100%" }}>
               <Card
                 style={{
                   // zIndex: 999,
@@ -63,11 +63,11 @@ const ProjectCard = (props) => {
                   background:
                     "linear-gradient(to right, #0c0c0e 50% ,  #0c0c0eb90 200%)",
                   opacity: "5px",
-                  // borderColor: "transparent",
-                  color: "white",
-                  // left: "10%",
-                  // width: "150%",
-                  // height: "100%",
+                  color: "black",
+                  fontSize: "15px",
+                  padding: "15px",
+                  borderWidth: "5px",
+                  // borderColor: "#152338"
                 }}
               >
                 {/* smoll description here  */}
@@ -76,7 +76,8 @@ const ProjectCard = (props) => {
             </Row>
             {/* </div> */}
             <Row className="">
-              <p>insert tools used</p>
+              <p>Tools used will be here</p>
+              {/* {props.tools} */}
             </Row>
             <Row className="">
               <div>

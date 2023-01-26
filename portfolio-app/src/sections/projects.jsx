@@ -1,14 +1,21 @@
 import "./section.css";
 import ProjectCard from "../components/projectCard.jsx";
 import { Container } from "react-bootstrap";
+// import { S } from "react-icons/si";
 
 const projectCardContents = [
   {
     title: "Ecommerce Webpage",
     subTitle: "Multi-tier web application with user and admin views",
-    desc: "this is a description",
+    desc:
+      "Deployed on AWS Elastic Beanstalk. " +
+      "Allows customers to register, filter products, " +
+      "manage items in a shopping cart, check out " +
+      "products and add reviews. " +
+      "Admins have a personalized view that shows all " +
+      "user events and transactions. ",
     images: ["portfolio-appsrcmediaprojectImagesecommerceLanding.jpg"],
-    tools: ["antlr4", "java", "html & css"],
+    tools: ["Java EE", "SpringBoot", "JPA", "React JSX"],
     url: "github.com",
   },
   {
@@ -40,6 +47,8 @@ const exportProjectCards = () => {
         title={content.title}
         subTitle={content.subTitle}
         desc={content.desc}
+        tools={content.tools}
+        url={content.url}
         orientation={"left"}
       />
     );
