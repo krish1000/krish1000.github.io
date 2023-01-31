@@ -33,27 +33,27 @@ export const ContactForm = () => {
     e.preventDefault();
 
     console.log(e);
-    emailjs
-      .sendForm
-      // process.env.REACT_APP_SERVICE_KEY, //service
-      // process.env.REACT_APP_TEMPLATE_KEY, //template
-      // form.current,
-      // process.env.REACT_APP_API_KEY //pbk
-      ()
-      .then(
-        (result) => {
-          console.log("WWWWWWWWWWWWWWWW");
-          console.log(result.text); //returns "OK"
-          setLoading(false);
-          setShowAlert(true);
-        },
-        (error) => {
-          console.log("LLLLLLLLLLLLLLLL");
-          console.log(error.text);
-          setLoading(false);
-          setShowAlert(true);
-        }
-      );
+    emailjs.sendForm;
+    process.env.REACT_APP_SERVICE_KEY, //service
+      process.env.REACT_APP_TEMPLATE_KEY, //template
+      form.current,
+      process.env
+        .REACT_APP_API_KEY //pbk
+        ()
+        .then(
+          (result) => {
+            console.log("WWWWWWWWWWWWWWWW");
+            console.log(result.text); //returns "OK"
+            setLoading(false);
+            setShowAlert(true);
+          },
+          (error) => {
+            console.log("LLLLLLLLLLLLLLLL");
+            console.log(error.text);
+            setLoading(false);
+            setShowAlert(true);
+          }
+        );
   };
 
   return (
