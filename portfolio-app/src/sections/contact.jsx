@@ -33,27 +33,31 @@ export const ContactForm = () => {
     e.preventDefault();
 
     console.log(e);
-    emailjs.sendForm;
-    process.env.REACT_APP_SERVICE_KEY, //service
-      process.env.REACT_APP_TEMPLATE_KEY, //template
-      form.current,
-      process.env
-        .REACT_APP_API_KEY //pbk
-        ()
-        .then(
-          (result) => {
-            console.log("WWWWWWWWWWWWWWWW");
-            console.log(result.text); //returns "OK"
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_SERVICE_KEY, //service
+        process.env.REACT_APP_TEMPLATE_KEY, //template
+        form.current,
+        process.env.REACT_APP_API_KEY //pbk
+      )
+      .then(
+        (result) => {
+          // console.log("WWWWWWWWWWWWWWWW");
+          console.log(result.text); //returns "OK"
+          setTimeout(() => {
             setLoading(false);
             setShowAlert(true);
-          },
-          (error) => {
-            console.log("LLLLLLLLLLLLLLLL");
-            console.log(error.text);
+          }, 750);
+        },
+        (error) => {
+          // console.log("LLLLLLLLLLLLLLLL");
+          console.log(error.text);
+          setTimeout(() => {
             setLoading(false);
             setShowAlert(true);
-          }
-        );
+          }, 750);
+        }
+      );
   };
 
   return (
@@ -107,17 +111,17 @@ export const ContactForm = () => {
 
       {(() => {
         console.log(showAlert);
-        if (!showAlert) {
+        if (showAlert) {
           return (
             <div>
               <br />
               <Alert
                 variant="success"
-                onClose={() => setShowAlert(true)}
+                onClose={() => setShowAlert(false)}
                 dismissible
               >
-                <Alert.Heading>heading!</Alert.Heading>
-                <p>thnx for msging me etc. FIX THIS!</p>
+                <Alert.Heading>Thank you for contacting me.</Alert.Heading>
+                <p>I will respond to you soon!</p>
               </Alert>
             </div>
           );
