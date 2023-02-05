@@ -15,7 +15,7 @@ const projectCardContents = [
       "Admins have a personalized view that shows all " +
       "user events and transactions. ",
     images: ["portfolio-appsrcmediaprojectImagesecommerceLanding.jpg"],
-    tools: ["Java EE", "SpringBoot", "JPA", "React JSX"],
+    tools: ["Java EE", "Spring Boot", "JPA", "React JSX"],
     url: "github.com",
   },
   {

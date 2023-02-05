@@ -3,10 +3,10 @@
     /* size: 50px; */
     /* width:102%; */
     /* transform:scale(1.0); */
-    position: relative;
+    /* position: relative; */
     /* left: 12%; */
     right: 230px;
-    margin-left: 10%;
+    /* margin-left: 10%; */
     /* border-radius: 50%; */
     /* transition: color 0.20s ease-in-out; */
     transition: transform 0.175s ease-in-out;
@@ -19,7 +19,7 @@
     height: auto;
     /* position: relative; */
     /* left: 12%; */
-    right: 230px;
+    /* right: 230px; */
 }
 
 .projectCard {
