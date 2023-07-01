@@ -1,5 +1,6 @@
 // import './section.css';
 import "../components/components.css";
+// import "../media/projectImages";
 import { Card, Container, Row, Col, Image } from "react-bootstrap";
 import { SiGithub } from "react-icons/si";
 import { FaToolbox } from "react-icons/fa";
@@ -69,9 +70,11 @@ const ProjectCard = (props) => {
                   style={{
                     // zIndex: 999,
                     // backgroundColor: "#00a46b",
-                    backdropFilter: "blur(5px)",
-                    background:
-                      "linear-gradient(to right, #0c0c0e 50% ,  #0c0c0eb90 200%)",
+                    backgroundColor: "rgba(255, 255, 255, 0.35)",
+                    backdropFilter: "blur(25px)",
+
+                    // background:
+                    //   "linear-gradient(to right, #0c0c0e 50% ,  #0c0c0eb90 200%)",
                     opacity: "5px",
                     color: "black",
                     fontSize: "15px",
@@ -141,6 +144,7 @@ const ProjectCard = (props) => {
                       borderRadius: "3%",
                       // objectFit: "contain",
                       // objectFit: "fill",
+                      objectFit: "cover",
                       height: "345px",
                       width: "220%",
                       // width: "200%",
@@ -150,7 +154,9 @@ const ProjectCard = (props) => {
                       // width: "auto",
                       // height: "auto",
                     }}
-                    src="https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    // src={require("../media/projectImages/ecommerceLanding.jpg")}
+                    src={require("../media/projectImages/" + props.images[0])}
+                    // src="https://images.pexels.com/photos/3629227/pexels-photo-3629227.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   />
                 </div>
               </Row>

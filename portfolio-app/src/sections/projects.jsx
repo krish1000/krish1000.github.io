@@ -14,7 +14,8 @@ const projectCardContents = [
       "products and add reviews. " +
       "Admins have a personalized view that shows all " +
       "user events and transactions. ",
-    images: ["portfolio-appsrcmediaprojectImagesecommerceLanding.jpg"],
+    // images: ["portfolio-appsrcmediaprojectImagesecommerceLanding.jpg"],
+    images: ["ecommerceLanding.jpg"],
     tools: ["Java EE", "Spring Boot", "JPA", "React JSX"],
     url: "github.com",
   },
@@ -28,8 +29,8 @@ const projectCardContents = [
       "value pairs to keep unique repo commits. " +
       "Flask web-app outputs spark data; that consists " +
       "of number of repos, top 10 most freq words etc",
-    images: ["asdf"],
-    tools: ["antlr4", "java", "html & css"],
+    images: ["github_analyzer.png"],
+    tools: ["pyspark", "flask", "HTML & CSS"],
     url: "github.com",
   },
   {
@@ -42,23 +43,15 @@ const projectCardContents = [
       "are created along with showing closing, price, " +
       "change, trades and volume. " +
       "Data stored using Replit's key-value database",
-    images: ["asdf"],
-    tools: ["antlr4", "java", "html & css"],
+    images: ["neohedge_bot.jpg"],
+    tools: ["replit", "python", "pandas", "discord"],
     url: "github.com",
   },
   {
-    title: "Compiler",
+    title: ".... to be added 2023/06/30",
     subTitle: "For Measuring Quality of Testing",
     desc: "this is a description",
-    images: ["asdf"],
-    tools: ["antlr4", "java", "html & css"],
-    url: "github.com",
-  },
-  {
-    title: "Compiler",
-    subTitle: "For Measuring Quality of Testing",
-    desc: "this is a description",
-    images: ["asdf"],
+    images: ["ecommerceLanding.jpg"],
     tools: ["antlr4", "java", "html & css"],
     url: "github.com",
   },
@@ -78,6 +71,7 @@ const exportProjectCards = () => {
         tools={content.tools}
         url={content.url}
         orientation={"left"}
+        images={content.images}
       />
     );
   });
